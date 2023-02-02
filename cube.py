@@ -46,7 +46,7 @@ col_index = { 1 : 'orange',
               4 : 'blue',
               5 : 'yellow',
               0 : 'white' }
-
+'''
 fin = False
 
 def find_contour(frame):
@@ -546,6 +546,7 @@ while cam.isOpened():
     cam.release()
     out.release()
     cv2.destroyAllWindows()
+'''
 
 ######################################################
 
@@ -554,7 +555,7 @@ facelet_id = [[[0 for col in range(3)] for row in range(3)] for fc in range(6)]
 colorpick_id = [0 for i in range(6)]
 curcol = None
 t = ("U", "R", "F", "D", "L", "B")
-cols = ("white", "orange", "green", "red", "blue","yellow")
+cols = ("yellow", "orange", "green", "red", "blue","white")
 
 def click(_event):
     global curcol
